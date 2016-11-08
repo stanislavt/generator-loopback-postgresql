@@ -1,0 +1,11 @@
+{
+  "db": {
+    "name": "db"
+  },
+  "email": {
+    "name": "email"
+  },
+  "storage": {
+    "name": "storage"
+  }
+}

@@ -1,0 +1,13 @@
+*.csv
+*.dat
+*.log
+*.pid
+*.seed
+*.swo
+*.swp
+*.tgz
+.env
+.env.*
+!.env.example
+.strong-pm
+/node_modules
