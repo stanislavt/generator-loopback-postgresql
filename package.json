@@ -14,10 +14,18 @@
     "url": "git+https://github.com/stanislavT/generator-loopback-postgresql.git"
   },
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "scaffold",
+    "back-end",
+    "loopback",
+    "migrations",
+    "postgresql",
+    "winston",
+    ".env",
+    "strongloop"
   ],
   "author": "Stanislav Tarasenko",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/stanislavT/generator-loopback-postgresql/issues"
   },
