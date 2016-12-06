@@ -21,10 +21,10 @@ exports.up = function(db, cb) {
     principalid: 'int',
     roleid: 'int'
   })
-  .then(result => {
+  .then((result) => {
       return db.addIndex('rolemapping', 'rolemapping_principalid_idx', 'principalid', cb);
     })
-  .catch(err => cb(err));
+  .catch((err) => cb(err));
 };
 
 exports.down = function(db, cb) {

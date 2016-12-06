@@ -21,7 +21,7 @@ exports.up = function(db, cb) {
     msg: 'string',
     meta: 'json',
     ts: {type: 'timestamp with time zone', defaultValue: 'now'}
-  }, cb)
+  }, cb);
 };
 
 exports.down = function(db, cb) {
