@@ -4,10 +4,15 @@
   "description": "Loopback+PostgreSQL generator",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "./node_modules/eslint/bin/eslint.js .",
+    "posttest": "npm run lint"
   },
   "dependencies": {
     "yeoman-generator": "^0.24.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.11.1",
+    "eslint-config-google": "^0.7.1"
   },
   "repository": {
     "type": "git",
