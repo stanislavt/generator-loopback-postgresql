@@ -10,30 +10,31 @@
 3. Run: `yo loopback-postgresql`
 
 ## Migrations
+You have an ability to work with migrations. 
+Before start you must make settings of this module. `/migrations/database.json`
 A new application has a few scripts for db migrations:
 
 ```
-npm run-script migrate up
+npm run migrate up
 ```
 The up command executes the migrations of your currently configured migrations directory.
 
 ```
-npm run-script migrate down
+npm run migrate down
 ```
 The down command executes the migrations of your currently configured migrations directory.
 
 ```
-npm run-script migrate reset
+npm run migrate reset
 ```
 The reset command is a shortcut to execute all down migrations and literally reset all migrations which where currently done.
 
 ```
-npm run-script migrate create
+npm run migrate create
 ```
 The create command creates templates for you, there are several options for this.
 
-*Migrations directory by default is located on `/migrations/`
-
+*Directory of migrations by default is located at: `/migrations/`
 Further information about db migrations you can find on [this](https://db-migrate.readthedocs.io/en/latest/Getting%20Started/the%20commands/) page.
 
 ## Looger
