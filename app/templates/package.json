@@ -3,7 +3,8 @@
   "version": "0.5.0",
   "main": "server/server.js",
   "scripts": {
-    "lint": "eslint .",
+    "lint": "./node_modules/eslint/bin/eslint.js .",
+    "lint-fix": "./node_modules/eslint/bin/eslint.js . --fix",
     "start": "node .",
     "posttest": "npm run lint",
     "migrate": "node ./node_modules/db-migrate/bin/db-migrate --config ./migrations/database.json"
@@ -29,7 +30,7 @@
     "db-migrate-pg": "^0.1.10",
     "dotenv-safe": "^2.3.1",
     "eslint": "^3.7.1",
-    "eslint-config-google": "^0.6.0"
+    "eslint-config-google": "^0.7.0"
   },
   "repository": {
     "type": "",

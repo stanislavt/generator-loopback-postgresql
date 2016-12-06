@@ -1,4 +1,17 @@
 {
   "extends": "google",
-  "es6": true
+  "node": true,
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "globalReturn": true,
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "max-len": ["warn", 120, 2, {"ignoreUrls": true}],
+    "comma-dangle": 0,
+    "one-var": 0,
+    "semi": 2
+  }
 }
