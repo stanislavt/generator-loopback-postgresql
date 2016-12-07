@@ -1,12 +1,12 @@
 'use strict';
 
+if (process.env.NODE_ENV != 'production')
+  require('dotenv-safe').load();
+
 let loopback = require('loopback');
 let boot = require('loopback-boot');
 let winston = require('winston');
 let app = module.exports = loopback();
-
-if (process.env.NODE_ENV != 'production')
-  require('dotenv-safe').load();
 
 app.start = function() {
   return app.listen(function() {

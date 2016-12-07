@@ -20,7 +20,7 @@ exports.up = function(db, cb) {
     level: 'string',
     msg: 'string',
     meta: 'json',
-    ts: {type: 'timestamp with time zone', defaultValue: 'now'}
+    ts: {type: 'timestamp with time zone DEFAULT now()'}
   }, cb);
 };
 

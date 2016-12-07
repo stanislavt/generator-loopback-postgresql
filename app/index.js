@@ -22,10 +22,15 @@ module.exports = generators.Base.extend({
       this.destinationPath('.env')
     );
 
+    this.fs.copyTpl(
+      this.templatePath('./winston/'),
+      this.destinationPath('./server/boot/')
+    );
+
     // Copy migrations
     this.fs.copyTpl(
-      this.templatePath('./migrations'),
-      this.destinationPath('./migrations')
+      this.templatePath('./migrations/'),
+      this.destinationPath('./migrations/')
     );
     this.fs.copyTpl(
       this.templatePath('./migrations/database.example.json'),
@@ -35,5 +40,6 @@ module.exports = generators.Base.extend({
   install: function() {
     this.npmInstall('loopback@'+configs.version, {'save': true});
     this.spawnCommandSync('npm', ['install']);
+    this.spawnCommandSync('mkdir', ['runtime']);
   }
 });
