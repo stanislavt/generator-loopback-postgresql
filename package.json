@@ -1,6 +1,6 @@
 {
   "name": "generator-loopback-postgresql",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Loopback+PostgreSQL generator",
   "main": "index.js",
   "scripts": {

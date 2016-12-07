@@ -1,4 +1,4 @@
-#Loopback-PostgreSQL generator
+# Loopback-PostgreSQL generator
  
 ## Description
 
@@ -6,11 +6,11 @@ Loopback-PostgreSQL generator is a [yeoman] (https://github.com/yeoman/generator
 
 * [LoopBack](https://github.com/strongloop/loopback) - Node.js REST API framework 
 * [PostgreSQL](https://github.com/strongloop/loopback-connector-postgresql) - PostgreSQL loopback connector 
-* [Winston] (https://github.com/winstonjs/winston) - Logging module that configured to write in DB, logfile and console
-* [.env module] (https://github.com/rolodato/dotenv-safe) - Library for .env credentials management
-* [DB migrations] (https://github.com/db-migrate/node-db-migrate) - Database migration framework for Node.js, settings and commands are described below
+* [Winston](https://github.com/winstonjs/winston) - Logging module that configured to write in DB, logfile and console
+* [.env module](https://github.com/rolodato/dotenv-safe) - Library for .env credentials management
+* [DB migrations](https://github.com/db-migrate/node-db-migrate) - Database migration framework for Node.js, settings and commands are described below
 
-Also current boilerplate uses [S3 component] (https://github.com/strongloop/loopback-component-storage) and SMTP.
+Also current boilerplate uses [S3 component](https://github.com/strongloop/loopback-component-storage) and SMTP.
 
 ## Install
 
