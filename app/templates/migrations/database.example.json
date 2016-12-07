@@ -1,8 +1,8 @@
 {
   "dev": {
     "driver": "pg",
-    "user": "username",
-    "password": "password",
+    "user": "postgres",
+    "password": "postgres",
     "host": "localhost",
     "database": "dbname",
     "schema": "public"

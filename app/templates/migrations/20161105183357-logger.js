@@ -20,8 +20,8 @@ exports.up = function(db, cb) {
     level: 'string',
     msg: 'string',
     meta: 'json',
-    ts: {type: 'timestamp with time zone', defaultValue: 'now'}
-  }, cb)
+    ts: {type: 'timestamp with time zone DEFAULT now()'}
+  }, cb);
 };
 
 exports.down = function(db, cb) {
